@@ -63,8 +63,12 @@ Then, from a Python interpreter:
 
     >>> import boto3
     >>> s3 = boto3.resource('s3')
+    >>> s3 = boto3.resource('dynamodb',aws_access_key_id='AKIAJ4HOI2RRIZ5NFKYA',aws_secret_access_key='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',region_name='ap-southeast-1')
     >>> for bucket in s3.buckets.all():
             print(bucket.name)
+
+
+
 
 Development
 -----------
